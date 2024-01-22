@@ -1,2 +1,2 @@
-# mini-formul-rio-vota-o-front-end
+# mini-formulario-votacao-front-end
 Mini site de votação para um trabalho da faculdade.
