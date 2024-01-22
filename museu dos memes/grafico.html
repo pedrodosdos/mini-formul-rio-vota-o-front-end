@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Museu dos Memes</title>
+  </head>
+  <body>
+    <div id="chart-container">
+      <canvas class="line-chart"></canvas>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+
+    <script>
+  var ctx = document.getElementsByClassName("line-chart")[0];
+  var data = {
+    datasets: [
+      {
+        data: [20, 15, 2, 8, 20, 1],
+        backgroundColor: [
+          "#f8db78",
+          "#db8b39",
+          "#f4e822",
+          "#42312d",
+          "#854d14",
+          "#d8a570",
+        ],
+      },
+    ],
+
+    labels: ["Meme 1", "Meme 2", "Meme 3", "Meme 4", "Meme 5", "Meme 6"],
+  };
+
+  var chartGraph = new Chart(ctx, {
+    type: "pie",
+    data: data,
+  });
+</script>
+
+    <div>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">home</a></li>
+          <li><a href="saibamais.html">saiba mais</a></li>
+          <li><a href="grafico.html">top 6</a></li>
+          <li><a href="redes.html">redes</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="botão-grafico">
+      <nav>
+        <a href="all memes.html">all memes</a>
+      </nav>
+    </div>
+    <footer>
+      <span><small>&copy;Plataforma feita por Museu dos Memes</small></span>
+    </footer>
+  </body>
+</html>
